@@ -19,9 +19,14 @@ function ListItemView() {
                 </TouchableOpacity>
             </View>
         )
+    
+        }
+         ListEmptyComponent={
+          <Text style={{ margin: 20, fontSize: 16 }}>No items added yet</Text>
         }
            
            />
+    
         </View>
     );
 }
