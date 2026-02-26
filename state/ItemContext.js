@@ -9,8 +9,16 @@ export function ItemProvider({children}){
         setItems([...items,inputvalue]);
         setInputValue('');
     }
+
+    const deleteItem =(index)=>{
+
+        const newItems = [...items];
+        newItems.splice(index,1);
+        setItems(newItems);
+      
+    }
 return (
-    <ItemContext.Provider value={{items,inputvalue,setInputValue,handleAddItem}}>
+    <ItemContext.Provider value={{items,inputvalue,setInputValue,handleAddItem,deleteItem}}>
         {children}
     </ItemContext.Provider>
 );
