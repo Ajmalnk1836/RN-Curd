@@ -6,11 +6,13 @@ import ItementerView from './components/ItementerView';
 
 import ListItemView from './components/ViewListItem';
 import { ItemProvider } from './state/ItemContext';
+// import { createAsyncStorage } from "@react-native-async-storage/async-storage";
 
 
 
 const Stack = createNativeStackNavigator();
 export default function App() {
+ // const storage = createAsyncStorage("items");
   return (
     <NavigationContainer>
       <Stack.Navigator>
