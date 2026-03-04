@@ -27,7 +27,7 @@ function HomeScreen (){
       <View style={styles.container}>
      < ListItemView/>
       <ItementerView/>
-      </View>
+      </View >
     </ItemProvider>
   )
 }
@@ -43,3 +43,21 @@ const styles = StyleSheet.create({
 
   
 });
+
+//CREATE TABLE IF NOT EXISTS itesm (
+// id INTIGER PRIMARY KEY AUTOINCRIMENT,
+// name TEXT
+//)
+
+//TODO:
+//1. Create a database to store the items
+//2. Create a function to add items to the database
+//3. Create a function to retrieve items from the database
+//4. Create a function to delete items from the database
+//5. Create a function to update items in the database
+
+//LEARN:
+//1. How to use SQLite in React Native
+//2. How to create a database in React Native
+// WHAT IS PRIMARY KEY?
+//A primary key is a unique identifier for a record in a database table. It is used to ensure that each record can be uniquely identified and accessed. In the context of the code snippet, the "id" field is designated as the primary key for the "items" table, meaning that each item will have a unique "id" value that can be used to reference it in the database.

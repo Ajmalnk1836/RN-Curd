@@ -9,12 +9,12 @@ function ListItemView() {
          
             <FlatList
            data={items}
-           keyExtractor={(item,index)=>index.toString()}
+           keyExtractor={(item,index)=>item.id}
            renderItem={({item,index})=> 
         (
             <View style={styles.itemRow}>
-                <Text>{item}</Text>
-                <TouchableOpacity onPress={() => deleteItem(index)}>
+                <Text>{item.name}</Text>
+                <TouchableOpacity onPress={() => deleteItem(item.id)}>
                     <Text style={styles.deleteButton}>Delete</Text>
                 </TouchableOpacity>
             </View>
